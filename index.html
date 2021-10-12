@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home | CCF HHME 2021</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: TheEvent - v4.6.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script type="text/javascript" src="assets/js/timecountdown.js"></script>
+
+  <script type="text/javascript">
+    /**
+     * time.day 和 time.dayZero 区别
+     * time.day 如果是1天 返回 1
+     * time.dayZero 如果是1天 则返回 01
+     * 除了day拥有Zero外 hour,minute,second,msec都有Zero 即小于10的，都会在前面补0
+     */
+    window.onload=function(){
+        xcsoft.countdown('2021-12-10',function (time) {
+            //time.days=总天数
+            //document.getElementById("y1").innerHTML=time.year
+            document.getElementById("d1").innerHTML=time.day
+            document.getElementById("h1").innerHTML=time.hourZero
+            document.getElementById("i1").innerHTML=time.minuteZero
+            document.getElementById("s1").innerHTML=time.secondZero
+            document.getElementById("m1").innerHTML=time.msecZero
+        },function (time) {
+            //倒计时结束后的操作
+        })
+        xcsoft.countup('2018-11-11',function (time) {
+            document.getElementById("y2").innerHTML=time.year
+            document.getElementById("d2").innerHTML=time.day
+            document.getElementById("h2").innerHTML=time.hourZero
+            document.getElementById("i2").innerHTML=time.minuteZero
+            document.getElementById("s2").innerHTML=time.secondZero
+        })
+
+        var nes=parseInt(new Date().getTime()/1000)+60;
+        xcsoft.countdown(parseInt(nes)+'.3',function (time) {
+            document.getElementById("s3").innerHTML=time.secondZero
+            document.getElementById("m3").innerHTML=time.msecZero
+        })
+
+    }
+</script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center" >
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="assets/img/logo3.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">首页</a></li>
+          <li><a class="nav-link scrollto" href="committee.html">大会组织</a></li>
+          <li><a class="nav-link scrollto" href="program.html">会议日程</a></li>
+          <li class="dropdown"><a href="PCC-calls.html"><span>征稿通知</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="PCC-calls.html">PCC 2021</a></li>
+            <li><a href="#">CWCC 2021</a></li>
+            <li><a href="#">CHCI 2021</a></li>
+          </ul>
+          </li> 
+          <li><a class="nav-link scrollto" href="report.html">特邀报告</a></li>
+          <li><a class="nav-link scrollto" href="forum.html">专题论坛</a></li>
+          <li><a class="nav-link scrollto" href="lecture.html">技术讲座</a></li>
+          <li><a class="nav-link scrollto" href="communication.html">论文交流</a></li>
+          <li><a class="nav-link scrollto" href="registration.html">会议注册</a></li>
+          <li><a class="nav-link scrollto" href="venue.html">会场及住宿</a></li>
+          <li><a class="nav-link scrollto" href="sponsor.html">承办赞助</a></li>
+          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li> 
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a class="buy-tickets scrollto" href="http://conf.ccf.org.cn/hhme2021">快速注册</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+     <!--<h1 class="mb-4 pb-0">CCF HHME<br><br>中国计算机学会<br> <br>和谐人机环境联合学术会议</h1>-->
+       <h1 class="mb-4 pb-0">CCF HHME 2021<br><span>第十七届</span> 和谐人机环境联合学术会议</h1> 
+      <p class="mb-4 pb-0">12月10-12日, 厦门大学科学艺术中心, 中国厦门</p>
+
+      <a href="#about" class="about-btn scrollto">关于会议</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>关于会议</h2>
+            <p>中国计算机学会和谐人机环境联合学术会议（CCF HHME）是全国普适计算学术会议（PCC）、全国人机交互学术会议（CHCI）、全国可穿戴计算学术会议（CWCC）三个相关领域的年度国内外顶级学术联合会议。过去三年已分别在天津，南京，重庆成功举办，推动学术和产业高层的交流与合作，成为国内普适计算，人机交互，AI与智能穿戴领域的顶级学术和产业领袖的盛会！<br><br> <a class="buy-tickets scrollto" href="about-conference.html">了解更多</a></p>
+            
+          </div>
+          <div class="col-lg-3">
+            <h3>地点与时间</h3>
+            <p>厦门大学科学艺术中心, 中国厦门</p>
+            <p>星期五至星期日<br>2021年12月10-12日</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>距离会议还有</h3>
+            <br>
+           
+            <span1 class="yg" style="float: left">
+            <p id="d1" style="color: black;font-size: 30px;font-weight: 600"></p>
+            <p style="color: black">D</p>
+        </span1>
+        <span1 class="or" style="float: left;margin-left: 15%">
+            <p id="h1" style="color: black;font-size: 30px;font-weight: 600"></p>
+            <p style="color: black">HR</p>
+        </span1>
+        <span1 class="pi" style="float: left;margin-left: 15%">
+            <p id="i1" style="color: black;font-size: 30px;font-weight: 600"></p>
+            <p style="color: black">MIN</p>
+        </span1>
+        <span1 class="pk" style="float: left;margin-left: 15%">
+            <p id="s1" style="color: #E33C99;font-size: 30px;font-weight: 600"></p>
+            <p style="color: #E33C99">SEC</p>
+        </span1>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- =======  F.A.Q Section ======= -->
+    <section id="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>动态新闻</h2>
+          <p><a href="news.html" >更多</a></p>
+        </div>
+        
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-9">
+
+            <ul class="faq-list">
+
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">2021-09-25<br>CCF HHME 2021会期及注册信息更新<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    1.CCF HHME 2021 会议日期调整为：2021年12月10日至12日<br>2.会议注册信息更新：早鸟价注册时间推迟至2021-11-20；会议注册缴费截止时间推迟至2021-12-03
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">2021-09-22<br>PCC 2021重要日期更新<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                   1.PCC2021论文录用通知日期更新：延期至2021-10-08<br>2.PCC2021论文修改稿提交日期更新：延期至2021-10-16
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">2021-08-31<br>会议注册页、会场及住宿页若干更新 <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    1.会议注册页上线，点击访问"<a href="http://conf.ccf.org.cn/hhme2021">http://conf.ccf.org.cn/hhme2021</a> ”直达会议注册系统<br>2.会场及住宿页更新：新增住宿（协议酒店及非协议酒店）及交通信息
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">2021-08-19<br>CHCI 2021论文投稿日期更新<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                   CHCI 2021论文投稿日期延期至2021-08-29
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">2021-08-16<br>CHCI 2021论文模板信息更新<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    1.CHCI 2021会议论文的中文稿件使用<u><a href="assets/files/CJC-Templet_Word2003.doc">《计算机学报》稿件模板（word）</a> </u>,英文的稿件请使用ACM的模板（CHI，IMWUT)<br>2.交流论文不受格式限制
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">2021-08-15<br>PCC 2021重要日期更新<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    1.PCC 2021论文投稿截止日期原定2021-08-15，现延期至2021-08-29<br> 2.PCC 2021录用通知日期原定2021-09-15，现延期至2021-09-22<br> 3.PCC 2021修改稿提交日期原定2021-09-24，现延期至2021-09-30
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End  F.A.Q Section -->
+   
+
+ <!-- ======= Important days Section ======= -->
+   
+   <section id="buy-tickets" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>重要日期</h2>
+          <!--<p>CCF HHME 2021 会议日期：<del>2021.10.22-24</del>&nbsp&nbsp&nbsp&nbsp2021.12.10-12</p>-->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center"></h5>
+                <h6 class="card-price text-center">PCC 2021</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>论文投稿截止<br><del>2021-08-15</del>&nbsp&nbsp&nbsp&nbsp2021-08-29</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>论文录用通知<br><del>2021-09-15</del>&nbsp&nbsp&nbsp&nbsp<del>2021-09-22</del>&nbsp&nbsp&nbsp&nbsp2021-10-08</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>论文修改稿提交<br><del>2021-09-24</del>&nbsp&nbsp&nbsp&nbsp<del>2021-09-30</del>&nbsp&nbsp&nbsp&nbsp2021-10-16</li>
+                 <!-- <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>-->
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <a href="PCC-calls.html"><button type="button" class="btn">会议详情</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center"></h5>
+                <h6 class="card-price text-center">CWCC 2021</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>论文投稿截止<br><del>2021-08-20</del>&nbsp&nbsp&nbsp&nbsp2021-09-01</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>论文录用通知<br><del>2021-09-15</del>&nbsp&nbsp&nbsp&nbsp2021-09-25</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>论文修改稿提交<br><del>2021-09-24</del>&nbsp&nbsp&nbsp&nbsp2021-10-08</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <a href="CWCC-calls.html"><button type="button" class="btn">会议详情</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pro Tier -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center"></h5>
+                <h6 class="card-price text-center">CHCI 2021</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>论文投稿截止<br><del>2021-08-20</del>&nbsp&nbsp&nbsp&nbsp2021-08-29</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>论文录用通知<br>2021-09-20</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>论文修改稿提交<br>2021-10-15</li>
+                 
+                </ul>
+                <hr>
+                <div class="text-center">
+                   <a href="CHCI-calls.html"><button type="button" class="btn">会议详情</button></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Order Form -->
+      <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Buy Tickets</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                </div>
+                <div class="form-group mt-3">
+                  <select id="ticket-type" name="ticket-type" class="form-select">
+                    <option value="">-- Select Your Ticket Type --</option>
+                    <option value="standard-access">Standard Access</option>
+                    <option value="pro-access">Pro Access</option>
+                    <option value="premium-access">Premium Access</option>
+                  </select>
+                </div>
+                <div class="text-center mt-3">
+                  <button type="submit" class="btn">Buy Now</button>
+                </div>
+              </form>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+    </section><!-- End  Important days Section -->
+
+
+
+
+
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>厦门风光</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="gallery-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><a href="assets/img/gallery/1.jpg" class="gallery-lightbox"><img src="assets/img/gallery/1.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/2.jpg" class="gallery-lightbox"><img src="assets/img/gallery/2.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/3.jpg" class="gallery-lightbox"><img src="assets/img/gallery/3.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/4.jpg" class="gallery-lightbox"><img src="assets/img/gallery/4.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/5.jpg" class="gallery-lightbox"><img src="assets/img/gallery/5.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/6.jpg" class="gallery-lightbox"><img src="assets/img/gallery/6.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/7.jpg" class="gallery-lightbox"><img src="assets/img/gallery/7.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/8.jpg" class="gallery-lightbox"><img src="assets/img/gallery/8.jpg" class="img-fluid" alt=""></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Supporters Section ======= -->
+    <section id="supporters" class="section-with-bg">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>承办赞助</h2>
+        </div>
+        
+        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+        <p>主办单位</p>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+        <p>承办单位</p>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+        <p>协办单位</p>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/9.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="assets/img/supporters/10.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Sponsors Section -->
+
+    
+
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6 footer-info">
+            <img src="assets/img/logo.png" alt="TheEvenet">
+           <!-- <p>中国计算机学会第十七届和谐人机环境联合学术会议 时间：2021年12月10-12日 地点：厦门大学科学艺术中心,中国厦门 主办单位：中国计算机学会 承办单位：厦门大学 协办单位：中国计算机学会人机交互专委、中国计算机学会普适计算专委、ACM SIGCHI 中国分会、中国自动化学会计算机图形学和人机交互专委会、中国图像图形学会人机交互专委会、厦门大学信息学院、厦门大学电影学院、闽台非遗文化数字化保护与智能处理文化和旅游部重点实验室</p>-->
+           <p>中国计算机学会和谐人机环境联合学术会议（CCF HHME）是全国普适计算学术会议（PCC）、全国人机交互学术会议（CHCI）、全国可穿戴计算学术会议（CWCC）三个相关领域的年度国内外顶级学术联合会议。过去三年已分别在天津，南京，重庆成功举办，推动学术和产业高层的交流与合作，成为国内普适计算，人机交互，AI与智能穿戴领域的顶级学术和产业领袖的盛会！</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>快速访问</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="committee.html">大会组织</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="program.html">会议日程</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="registration.html">会议注册</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="venue.html">会场及住宿</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="sponsor.html">承办赞助</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>往届会议</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://hhme.ccf.org.cn/history/2020/index.html">2020</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://hhme.ccf.org.cn/history/2019/index.html">2019</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://hhme.ccf.org.cn/history/2018/index.html">2018</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://hhme.ccf.org.cn/history/2017/index.html">2017</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://hhme.ccf.org.cn/history/2015/index.html">2015</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>联系我们</h4>
+            <p>
+              思明南路422号 <br>
+              福建省厦门市思明区, 邮编 361005<br>
+              中国厦门 <br>
+              <strong>会务组邮箱:</strong> ccfhhme2021@163.com<br>
+            </p>
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>CCF HHME 2021</strong>. 版权所有
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+      -->
+       网站维护 <a href="">厦门大学</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+ <script src="assets/js/script.js"></script>
+</body>
+
+</html>
